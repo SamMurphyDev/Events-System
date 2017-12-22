@@ -4,7 +4,7 @@ Event System is a tool that allows for custom events and custom listeners. By ex
 ## Examples
 
 Basic example of a Event listener. These are how events notify particular parts of your codebase.
-```
+```C#
 public class ExampleListener : IEventListener
 {
 	public ExampleListener()
@@ -21,7 +21,7 @@ public class ExampleListener : IEventListener
 ```
 
 Basic Example of a Event. These are what can be called to allow you to notify parts of your codebase.
-```
+```C#
 public class ExampleEvent : Event
 {
 	private static EventHandlerContainer _hc = new EventHandlerContainer();
@@ -29,7 +29,7 @@ public class ExampleEvent : Event
 ```
 
 Using Event Listener Priorities. These can be used so certain listeners can be notifed beforce other listeners of events occuring.
-```
+```C#
 public class ExampleListenerWithPriorities : IEventListener
 {
 	public ExampleListener()
