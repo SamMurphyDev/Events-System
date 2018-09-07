@@ -44,13 +44,13 @@ public class ExampleListenerWithPriorities : IEventListener
     }
 
     @EventHandler(priority = EventPriority.Normal)
-    public void listenerLowPriority(ExampleEvent event)
+    public void listenerNormalPriority(ExampleEvent event)
     {
     	//This will happen second
     }
 
     @EventHandler(priority = EventPriority.High)
-    public void listenerLowPriority(ExampleEvent event)
+    public void listenerHighPriority(ExampleEvent event)
     {
     	//This will happen first
     }
