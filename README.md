@@ -65,4 +65,4 @@ public class ExampleEvent : Event, ICancellable
 
     public bool Cancelled { get; set; }
 }
-```
+```C#
