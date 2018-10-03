@@ -58,11 +58,11 @@ public class ExampleListenerWithPriorities : IEventListener
 ```
 
 Using event cancelling. Cancelling a event will stop it in it's tracks. No further listeners will be called if the event has been cancelled.
-```
+```C#
 public class ExampleEvent : Event, ICancellable
 {
     private static EventHandlerContainer _hc = new EventHandlerContainer();
 
     public bool Cancelled { get; set; }
 }
-```C#
+```
